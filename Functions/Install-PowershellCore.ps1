@@ -24,7 +24,7 @@ function Install-PowerShellCore {
     $NewestVer = $NewPS.FileName.Split("-")[1]
     
     function Install-PShell {   
-        Set-Location "C:\its"
+        Set-Location "C:\Temp"
         Invoke-WebRequest -uri $NewPS.URL -OutFile .\PowershellCore.msi
         Write-Host "Download Complete" -ForegroundColor Yellow
         Write-Host "#####################################"

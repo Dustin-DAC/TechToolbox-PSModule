@@ -8,7 +8,9 @@
 if (!(Test-Path -Path "C:\log")) {
     New-Item -Path C:\log -ItemType Directory -Force
 }
-
+if (!(Test-Path -Path "C:\temp")) {
+    New-Item -Path C:\temp -ItemType Directory -Force
+}
 
 
 
@@ -17,9 +19,8 @@ function Set-Var {
     $Var = @{
         Log  = "C:\log\"
         Date = Get-Date -Format MM-dd-yy
+        Temp = "C:\Temp"
     }
-    Set-Variable -Name $ITS -Value $ITS -Scope Script -Force
-    return $Var
 }
 
 
