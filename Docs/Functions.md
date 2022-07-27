@@ -20,10 +20,12 @@ This command will generate a few power reports and copy them to the $Log directo
 3. Battery Report 
 4. System Power Report
 
+---
 ### Get-RepairLogs
 
 This command gathers SFC, DISM, and Chkdsk logs and combines them in the $Log Directory. Currently it will pull the last 150 lines of the SFC and DISM reports to make them a little more manageable. 
 
+---
 ### Install-PoweshellCore
 
 This was a fun project to assist with updating PowershellCore. It requires another module to download the correct (latest) version from GitHub. 
@@ -31,6 +33,7 @@ This was a fun project to assist with updating PowershellCore. It requires anoth
 Dependancies - PSReleaseTools
 Pre-Configured Download - Windows x64
 
+---
 ### New-Password
 
 Generates a random password based on 5+ character word and some random numbers.
