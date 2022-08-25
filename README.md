@@ -24,3 +24,6 @@ Support for this project/ product is limited to the resources listed above.
 ## License
 
 This project is [licensed under the MIT License](LICENSE).
+
+### Module Docs
+[Functions Documentation](Docs/Functions.md)
