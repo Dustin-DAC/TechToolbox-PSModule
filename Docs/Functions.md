@@ -37,3 +37,13 @@ Pre-Configured Download - Windows x64
 ### New-Password
 
 Generates a random password based on 5+ character word and some random numbers.
+
+---
+### Get-PSExec
+
+Downloads PSExec from Microsoft and unzips it into a temp folder. Has a parameter for -Regedit which will open a system level regedit window in the session.
+
+---
+### Get-Sysmon
+
+Downloads and installs Sysmon from Sysinternals
