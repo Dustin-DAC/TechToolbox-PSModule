@@ -3,7 +3,10 @@
 
 ## Initialization Functions and Variables
 ---
-Set-Var : Creates a standard variable for three items re-used throughout almost every other function in this module. 
+Set-Var : Creates a standard variable for three items re-used throughout almost every other function in this module. You can also call these at any time while the module is loaded. 
+
+  PS>$Date
+  
 
 1. Date - Simple MM-DD-YY format.
 2. Log - Standardizes C:\Logs for all logging and results.
@@ -41,9 +44,24 @@ Generates a random password based on 5+ character word and some random numbers.
 ---
 ### Get-PSExec
 
-Downloads PSExec from Microsoft and unzips it into a temp folder. Has a parameter for -Regedit which will open a system level regedit window in the session.
+Downloads PSExec from Microsoft and unzips it into a temp folder. Has a parameter for -Regedit which will open a system level regedit window in the session. 
 
 ---
 ### Get-Sysmon
 
 Downloads and installs Sysmon from Sysinternals
+
+---
+### Get-TeamsDiagnostics
+
+Downloads Skype for Business Network Assessment Tool and runs a full diagnostic of communication to MS servers. Reports are dumped in the $Log directory. 
+
+---
+### Reset-ADUser
+
+Resets an AD User by their identity with additional checks/features
+
+- Checks if password is set to never expire and verifies
+- Generates a random password & forces change on next logon
+- Unlocks the account if it is locked from too many attempts
+- Runs AzureAD sync immediately if available
